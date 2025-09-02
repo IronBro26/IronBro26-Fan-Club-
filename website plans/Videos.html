@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IronBro26 Fan Club - Videos</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    display: flex;
+    overflow-x: hidden;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #ff1a1a, #660000);
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 25px #ff0000, inset 0 0 20px #330000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 15px 0 25px;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000, 0 0 25px #ff3333, 0 0 40px #ff6666;
+    animation: pulse 2s infinite alternate;
+  }
+
+  @keyframes pulse {
+    from { text-shadow: 0 0 10px #ff0000, 0 0 25px #ff3333; }
+    to { text-shadow: 0 0 20px #ff4444, 0 0 40px #ff6666; }
+  }
+
+  .sidebar img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px red, 0 0 40px #ff3333;
+    border: 3px solid #ff0000;
+  }
+
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 0, 0, 0.15);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .sidebar a:hover {
+    background: #ff0000;
+    box-shadow: 0 0 15px #ff0000, 0 0 30px #ff3333;
+    transform: scale(1.05);
+  }
+
+  /* Admin button */
+  .admin-btn {
+    display:block;
+    padding:12px;
+    margin:10px 0;
+    background:#ff1a1a;
+    color:#000;
+    font-weight:bold;
+    border-radius:8px;
+    text-decoration:none;
+    text-align:center;
+    box-shadow:0 0 15px #ff4444, 0 0 25px #ff6666;
+    transition:0.3s;
+  }
+  .admin-btn:hover {
+    background:#ff3333;
+    box-shadow:0 0 25px #ff6666,0 0 40px #ff9999;
+    transform:scale(1.05);
+  }
+
+  /* Main content */
+  .content {
+    margin-left: 280px;
+    padding: 40px;
+    flex-grow: 1;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: #ff3131;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #ff3131, 0 0 30px #ff3333, 0 0 50px #ff6666;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ddd;
+  }
+
+  /* Neon video buttons */
+  .video-link {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 30px;
+    background: #111;
+    border-radius: 12px;
+    color: #ff3131;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    border: 2px solid #ff3131;
+    box-shadow: 0 0 10px #ff3131, 0 0 25px #ff3333, 0 0 50px #ff6666;
+  }
+
+  .video-link:hover {
+    background: #ff3131;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff3131, 0 0 40px #ff3333, 0 0 80px #ff6666;
+  }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <!-- Use relative path for logo -->
+  <img src="my-logo.png" alt="Logo">
+  <h1>IronBro26 Fan Club</h1>
+  <a href="index.html">🏠 Home</a>
+  <a href="Fan mail.html">💌 Fan Mail</a>
+  <a href="brosquad.html">🔥 Join Bro Squad</a>
+  <a href="signup.html" target="_blank">🔑 Sign Up</a>
+  <a href="admin.html" class="admin-btn">🛡 Admin Panel</a>
+</div>
+
+<!-- Content -->
+<div class="content">
+  <h1>Watch IronBro26 Videos 🎮🔥</h1>
+  <p>Click below to go directly to my YouTube channel or videos!</p>
+
+  <!-- Channel Videos Link -->
+  <a class="video-link" href="https://www.youtube.com/@IronBro-26/videos" target="_blank">
+    📺 Watch My Videos
+  </a>
+
+  <!-- Channel Homepage Link -->
+  <a class="video-link" href="https://www.youtube.com/@IronBro-26" target="_blank">
+    🏆 Go to Channel
+  </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bro Squad Donations</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #ff1a1a;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #ff1a1a;
+  text-shadow: 0 0 10px #ff1a1a;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: inline-block;
+}
+
+input[type="image"] {
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+input[type="image"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff3333;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: none;
+  background: #ff1a1a;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #ff1a1a;
+}
+
+button:hover {
+  background: #ff3333;
+  box-shadow: 0 0 15px #ff6666;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🔥 Support the Bro Squad 🔥</h1>
+  <p>Your donation helps us create more premium videos and exclusive content!</p>
+
+  <!-- PayPal Donate Button -->
+  <form action="https://www.paypal.com/donate" method="post" target="_top">
+    <input type="hidden" name="hosted_button_id" value="XW84HZYARAEG4" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+    <img alt="" border="0" src="https://www.paypal.com/en_ZA/i/scr/pixel.gif" width="1" height="1" />
+  </form>
+
+  <br>
+  <button onclick="goHome()">🏠 Home</button>
+</div>
+
+<script>
+function goHome(){
+  // Relative link to the homepage
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronBro26 Fan Club</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      display: flex;
+      overflow-x: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      background: linear-gradient(180deg, #ff1a1a, #660000);
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 25px #ff0000, inset 0 0 20px #330000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar h1 {
+      font-size: 22px;
+      text-align: center;
+      margin: 15px 0 25px;
+      color: #fff;
+      text-shadow: 0 0 10px #ff0000, 0 0 25px #ff3333, 0 0 40px #ff6666;
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { text-shadow: 0 0 10px #ff0000, 0 0 25px #ff3333; }
+      to { text-shadow: 0 0 20px #ff4444, 0 0 40px #ff6666; }
+    }
+
+    .sidebar img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 90px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px red, 0 0 40px #ff3333;
+      border: 3px solid #ff0000;
+    }
+
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 12px;
+      margin: 10px 0;
+      background: rgba(255, 0, 0, 0.15);
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .sidebar a:hover {
+      background: #ff0000;
+      box-shadow: 0 0 15px #ff0000, 0 0 30px #ff3333;
+      transform: scale(1.05);
+    }
+
+    /* Main content */
+    .content {
+      margin-left: 280px;
+      padding: 40px;
+      flex-grow: 1;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .welcome {
+      font-size: 32px;
+      text-shadow: 0 0 20px red, 0 0 30px #ff3333, 0 0 50px #ff6666;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .description {
+      background: rgba(255, 0, 0, 0.12);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px red;
+      margin-bottom: 35px;
+      border-left: 5px solid #ff3333;
+    }
+
+    .goals {
+      background: rgba(255, 0, 0, 0.12);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px red;
+      border-left: 5px solid #ff3333;
+    }
+
+    .goals h2 {
+      margin-bottom: 15px;
+      text-shadow: 0 0 12px red, 0 0 30px #ff3333;
+    }
+
+    .goal-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .goal-list li {
+      font-size: 18px;
+      margin: 6px 0;
+      padding: 8px;
+      border-radius: 6px;
+      transition: transform 0.3s;
+    }
+
+    .goal-list li:hover {
+      transform: translateX(8px);
+    }
+
+    .goal-done {
+      color: #00ff66;
+      text-shadow: 0 0 10px #00ff66, 0 0 20px #00cc55;
+    }
+
+    .goal-pending {
+      color: #ff4444;
+      text-shadow: 0 0 10px #ff4444, 0 0 20px #ff1111;
+    }
+
+    /* Neon play button */
+    .yt-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 28px;
+      background: #ff0000;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 25px red, 0 0 50px #ff3333;
+      transition: all 0.3s;
+    }
+
+    .yt-button:hover {
+      background: #cc0000;
+      box-shadow: 0 0 40px red, 0 0 70px #ff3333;
+      transform: scale(1.08);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Logo file should be in the same folder as this HTML and called "logo.jpg" -->
+    <img src="C:\Users\Krfuc\OneDrive\Documents\Desktop\website plans\your-logo.jpg" alt="C:\Users\Krfuc\OneDrive\Documents\Desktop\website plans\your-logo.jpg"> 
+    <h1>IronBro26 Fan Club</h1>
+    <a href="#">🎬 Videos</a>
+    <a href="#">💌 Fan Mail</a>
+    <a href="#">🔥 Bro Squad</a>
+    <a href="#">🔑 Sign Up</a>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h2 class="welcome">Welcome to The Fan Club</h2>
+
+    <div class="description">
+      <h3>IronBro26</h3>
+      <p>
+        A Minecraft, Roblox, Funko Pop unboxing, tutorials and awesome edits channel.  
+        <br><br>
+        ⭐ Make sure to subscribe ⭐
+      </p>
+      <a class="yt-button" href="https://www.youtube.com/@IronBro-26/videos" target="_blank">
+        ▶️ Watch on YouTube
+      </a>
+    </div>
+
+    <div class="goals">
+      <h2>Goals</h2>
+      <ul class="goal-list">
+        <li class="goal-done">10 ✅</li>
+        <li class="goal-done">20 ✅</li>
+        <li class="goal-done">30 ✅</li>
+        <li class="goal-done">40 ✅</li>
+        <li class="goal-pending">50 ❌</li>
+        <li class="goal-pending">60 ❌</li>
+        <li class="goal-pending">70 ❌</li>
+        <li class="goal-pending">80 ❌</li>
+        <li class="goal-pending">90 ❌</li>
+        <li class="goal-pending">💯 ❌</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Firebase App (core SDK) -->
+<script type="module">
+  // Import Firebase modules
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCHGdZp9L9iNaNjgBIa8vTP6EzcSQuzV-k",
+    authDomain: "ironbro26-fan-club.firebaseapp.com",
+    projectId: "ironbro26-fan-club",
+    storageBucket: "ironbro26-fan-club.appspot.com",
+    messagingSenderId: "913900082899",
+    appId: "1:913900082899:web:2e3f297322521c17fae626",
+    measurementId: "G-PT3VRFJG1X"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  console.log("🔥 Firebase connected successfully!");
+</script>
+<script type="module">
+  import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+
+  const db = getFirestore(app);
+
+  // Example: Add fan mail
+  async function submitFanMail(message, username) {
+    try {
+      await addDoc(collection(db, "fanMail"), {
+        username: username,
+        message: message,
+        timestamp: new Date()
+      });
+      console.log("✅ Fan mail saved!");
+    } catch (e) {
+      console.error("❌ Error adding fan mail: ", e);
+    }
+  }
+
+  // Example: Load fan mail
+  async function loadFanMail() {
+    const querySnapshot = await getDocs(collection(db, "fanMail"));
+    querySnapshot.forEach((doc) => {
+      console.log(doc.id, " => ", doc.data());
+    });
+  }
+
+  // Call this when a user submits
+  // submitFanMail("This site is awesome!", "IronBroFan123");
+  // loadFanMail();
+</script>
+
+
+</body>
+</html>

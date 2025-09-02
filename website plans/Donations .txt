@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - BroSquad</title>
+  <style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .donation-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .donation-buttons a button {
+      padding: 12px 24px;
+      background: #0070ba;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .donation-buttons a button:hover {
+      background: #005c99;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Support the BroSquad!</h1>
+  <p>Choose an amount to donate ❤️</p>
+
+  <div class="donation-buttons">
+    <!-- $1 Button -->
+    <a href="https://www.paypal.com/donate?business=YOURPAYPALEMAIL&amount=1&currency_code=USD" target="_blank">
+      <button>$1</button>
+    </a>
+
+    <!-- $2 Button -->
+    <a href="https://www.paypal.com/donate?business=YOURPAYPALEMAIL&amount=2&currency_code=USD" target="_blank">
+      <button>$2</button>
+    </a>
+
+    <!-- $3 Button -->
+    <a href="https://www.paypal.com/donate?business=YOURPAYPALEMAIL&amount=3&currency_code=USD" target="_blank">
+      <button>$3</button>
+    </a>
+
+    <!-- $4 Button -->
+    <a href="https://www.paypal.com/donate?business=YOURPAYPALEMAIL&amount=4&currency_code=USD" target="_blank">
+      <button>$4</button>
+    </a>
+
+    <!-- $5 Button -->
+    <a href="https://www.paypal.com/donate?business=YOURPAYPALEMAIL&amount=5&currency_code=USD" target="_blank">
+      <button>$5</button>
+    </a>
+  </div>
+
+  <footer>
+    <p>Thank you for supporting the BroSquad 💙</p>
+  </footer>
+</body>
+</html>
